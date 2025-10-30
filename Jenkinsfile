@@ -23,7 +23,7 @@ pipeline {
 		stage('Running the Docker Container'){
 			steps{
 		  echo "Running the container"
-		  sh 'docker run -d -p 3000:3000 -- name myapp $IMAGE_NAME:latest'
+		  sh 'docker run -d -p 3000:3000 --name myapp $IMAGE_NAME:latest'
 		  sh 'docker ps'
 		}
 		}
