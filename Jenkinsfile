@@ -8,7 +8,7 @@ pipeline {
 	stages{
 		stage('Cloning the repository'){
 		  echo "Cloning the repository"
-		  git branch: 'main', url:""
+		  git branch: 'main', url:"https://github.com/AmrutaJayanti/my-node-jenkin-app.git"
 		 }
 		
 		stage('Build the Docker image'){
